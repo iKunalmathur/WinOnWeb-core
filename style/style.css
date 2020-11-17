@@ -17,6 +17,11 @@ body {
   background: #091A46;
 }
 
+::-webkit-scrollbar {
+  height: 0px;
+  width: 0px;
+}
+
 .container {
   height: 100vh;
   color: #fff;

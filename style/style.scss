@@ -24,6 +24,11 @@ body {
     // background: url('./images/bg/bg-2.png');
 }
 
+::-webkit-scrollbar {
+    height: 0px;
+    width: 0px;
+}
+
 .container {
     height: 100vh;
     // background: $bg-primary;
@@ -87,6 +92,8 @@ body {
             justify-content: center;
             align-items: center;
         }
+
+        
 
         // background-color: rgba(255, 255, 255, 0.1);
         .tile {
