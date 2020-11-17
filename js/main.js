@@ -141,10 +141,10 @@ function changeBackground() {
         var num = Math.floor(Math.random() * 6);
         console.log(num);
         var bg = backgroundImages[num];
-        document.body.style.background = `url('../images/bg/${bg}')`;
+        document.body.style.background = `url('./images/bg/${bg}')`;
         localStorage.setItem('background',bg);
     }else{
-        document.body.style.background = `url('../images/bg/${background}')`;
+        document.body.style.background = `url('./images/bg/${background}')`;
     }
 }
 
