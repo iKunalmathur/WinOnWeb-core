@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--Add 'user-scalable=no' and Remove 'initial-scale=1.0' to disable Zoom (mobile)-->
+    <!-- e.g <meta meta name="viewport" content="width=device-width, user-scalable=no" />  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>WinOnWeb</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/billg.png" type="image/x-icon"> 
+    <link rel="apple-touch-icon" href="./images/billg.png">
+    <!-- /favicon -->
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <!-- /stylesheet -->
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="text">Start</div>
+            <div class="profile">
+                <div class="name">
+                    Elmo <br>
+                    Muppet
+                </div>
+                <div class="img border-hover">
+                    <img src="../images/elmo.png" alt="profile">
+                </div>
+            </div>
+        </header>
+        <section class="tiles-wrapper">
+            <div class="tile  sm sm-1 flex-center" style="background-color: #FBBC05;">
+                <span class="size">sm-1</span>
+                <i class="fas fa-user-circle fa-2x"></i>
+                <span class="tile-title">Profile</span>
+            </div>
+            <div class="tile  sm sm-2 flex-center" style="background-color: #0099E5;">
+                <span class="size">sm-2</span>
+                <i class="fab fa-twitter fa-2x"></i>
+                <span class="tile-title">Twitter</span>
+                </div>
+            <div class="tile  sm sm-3 flex-center" style="background-color: #00A98F;">
+                <span class="size">sm-3</span>
+                <i class="fas fa-search fa-2x"></i>
+                <span class="tile-title">Search</span>
+            </div>
+            <div id="bg-btn" class="tile  sm sm-4 flex-center" style="background-color: #A100A8;">
+                <span class="size">sm-4</span>
+                <i class="fas fa-sync-alt fa-2x"></i>
+                <span class="tile-title">Change bg</span>
+            </div>
+            <div class="tile  md md-1 " style="background-color: #FF6A00;">
+                <span class="size">md-1</span>
+                <div class="weather">
+                    <div class="weather-info">
+                        <p id="location">Delhi</p>
+                        <p id="temperature">20.2°c</p>
+                        <p id="feels-like">Feels like 21°c</p>
+                    </div>
+                    <div class="weather-image">
+                        <img id="wheather-icon" src="http://cdn.weatherapi.com/weather/64x64/day/122.png" alt="">
+                    </div>
+                </div>
+                <!-- <i class="fab fa-cloudversify fa-4x"></i> -->
+                <span class="tile-title">Weather</span>
+            </div>
+            <div class="article-tile tile xl xl-1 " style="background-color: #009B00;">
+                <span class="size">xl-1</span>
+                <div class="article">
+                    <div class="article-content">
+                        <div class="article-img" id="article-img">
+                            <img src="https://raw.githubusercontent.com/ybq/AndroidSpinKit/master/art/Circle.gif">
+                        </div>
+                        <div class="article-text" id="article-text">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas saepe reprehenderit cumque unde id iste ducimus eum ullam suscipit sequi laudantium ratione consectetur, accusantium quunde id iste ducimus eum ullam suscipit sequi laudantium is, rem cupiditate tempora quaunde id iste ducimus eum ullam suscipit sequi laudantium m? Suscipit.
+                            </p>
+                        </div>
+                    </div>
+                
+                </div>
+                <span class="tile-title">News </span>
+            </div>
+            <div class="tile  md md-2" style="background-color: #EA1D5D;">
+                <span class="size">md-2</span>
+            <div class="today-info">
+                <span class="date"></span>
+                <span class="month"></span>
+                <span class="day"></span>
+                <span class="year"></span>
+                <span class="time"></span>
+            </div>
+            <!-- <span class="tile-title">title</span> -->
+            </div>
+            <div class="tile  md md-3 flex-center" style="background-color: #3A5997;">
+                <span class="size">md-3</span>
+                <i class="fab fa-facebook-f fa-5x"></i>
+                <span class="tile-title">Facebook</span>
+            </div>
+            <div class="tile  lg lg-1" style="background-color: #603CBB;">
+                <span class="size">lg-1</span>
+                <div class="quote">
+                </div>
+                <!-- <span class="tile-title">title</span> -->
+            </div>
+            <div class="tile  lg lg-2" style="background-color: #1768fd;">
+                <span class="size">lg-2</span>
+            <div class="img-wrapper">
+                <img class="img-slide" src="https://images.unsplash.com/photo-1605407236539-7b783d7e6ecc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="">
+            </div>
+            <span class="tile-title">Photos</span>
+            </div>
+        </section>
+        <footer>
+            <p>Thanks to <img src="https://img.icons8.com/color/48/000000/microsoft.png"/> Microsoft</p>    
+        </footer>
+    </div>
+    <!-- Script Link -->
+
+    <script src="./js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
+    <!-- GSAP animation -->
+    <script>
+    </script>
+</body>
+</html>
