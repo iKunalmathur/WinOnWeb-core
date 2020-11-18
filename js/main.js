@@ -102,7 +102,7 @@ async function getNewsArticles(){
     // const sources = "bbc-news"
     const sources = "techcrunch"
     
-    const url = `http://newsapi.org/v2/top-headlines?sources=${sources}&apiKey=${apiKey}`
+    const url = `https://newsapi.org/v2/top-headlines?sources=${sources}&apiKey=${apiKey}`
     
     const res = await fetch(`${proxyUrl}${url}`)
 
@@ -158,7 +158,7 @@ bgButton.addEventListener('click', () => {
 async function getCurrentWhether() {
     const key = '4bfd634c6c9a4d91ac841351201711';
     const location = 'delhi';
-    const res = await fetch(`http://api.weatherapi.com/v1/current.json?key=${key}&q=${location}`);
+    const res = await fetch(`https://api.weatherapi.com/v1/current.json?key=${key}&q=${location}`);
     const data = await res.json();
     console.log('====================================');
     console.log(data);
