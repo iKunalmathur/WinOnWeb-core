@@ -136,15 +136,22 @@ async function getRandomImg(){
 
 function changeBackground() {
     const background = localStorage.getItem('background');
+    const footerBackground = localStorage.getItem('footerBackground');
     if (background === null) {
         const backgroundImages = ['bg-1.jpg','bg-2.png','bg-3.jpg','bg-4.jpg','bg-5.png','bg-6.jpg']
+        const footerBackground = ['#010133','#37003A','#291127','#180153','#180052','#2B0055']
         var num = Math.floor(Math.random() * 6);
+        // var num = 5;
         console.log(num);
         var bg = backgroundImages[num];
+        var footerBg = footerBackground[num];
         document.body.style.background = `url('./images/bg/${bg}')`;
+        document.querySelector('footer').style.background = footerBg;
         localStorage.setItem('background',bg);
+        localStorage.setItem('footerBackground',footerBg);
     }else{
         document.body.style.background = `url('./images/bg/${background}')`;
+        document.querySelector('footer').style.background = footerBackground;
     }
 }
 
@@ -164,7 +171,7 @@ async function getCurrentWhether() {
     console.log(data);
     console.log('====================================');
     document.getElementById('wheather-icon').src = `${data.current.condition.icon}`;
-    document.getElementById('temperature').innerText = `${data.current.temp_c}°c`;
+    document.getElementById('temperature').innerText = `${Math.floor(data.current.temp_c)}°c`;
     document.getElementById('feels-like').innerText = `feels like ${data.current.feelslike_c}°c`;
 }
 

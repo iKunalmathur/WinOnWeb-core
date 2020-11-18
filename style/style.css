@@ -477,7 +477,6 @@ body {
 }
 
 .container footer {
-  background: #091A46;
   padding: 1em 0em;
   text-align: center;
   position: fixed;
@@ -558,6 +557,7 @@ body {
     font-size: 3em;
   }
   .container footer {
+    background: none !important;
     padding: 0em;
     text-align: center;
     position: relative;

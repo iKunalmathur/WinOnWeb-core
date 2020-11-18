@@ -381,7 +381,7 @@ body {
     }
 
     footer {
-        background: $bg-primary;
+        // background: $bg-primary;
         padding: 1em 0em;
         text-align: center;
         position: fixed;
@@ -484,6 +484,7 @@ body {
         }
 
         footer {
+            background:none!important;
             padding: 0em;
             text-align: center;
             position: relative;
