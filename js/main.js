@@ -92,11 +92,11 @@ function displayQuote() {
 
 }
 
+const proxyUrl = "https://cors-anywhere.herokuapp.com/"
+
 // Article fetch 
 
 async function getNewsArticles(){
-    
-    const proxyUrl = "https://cors-anywhere.herokuapp.com/"
     
     const apiKey = "56217ae0c7484c69a6663b7382fdf888";
     // const sources = "bbc-news"
@@ -158,7 +158,7 @@ bgButton.addEventListener('click', () => {
 async function getCurrentWhether() {
     const key = '4bfd634c6c9a4d91ac841351201711';
     const location = 'delhi';
-    const res = await fetch(`https://api.weatherapi.com/v1/current.json?key=${key}&q=${location}`);
+    const res = await fetch(`${proxyUrl}https://api.weatherapi.com/v1/current.json?key=${key}&q=${location}`);
     const data = await res.json();
     console.log('====================================');
     console.log(data);
