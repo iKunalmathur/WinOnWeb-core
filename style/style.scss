@@ -381,8 +381,7 @@ body {
     }
 
     footer {
-        // background: $bg-primary;
-
+        background: $bg-primary;
         padding: 1em 0em;
         text-align: center;
         position: fixed;
@@ -390,10 +389,8 @@ body {
         bottom: 0;
         left: 0;
         right: 0;
-
         p {
-            margin-top: 0;
-
+            margin: 0;
             img {
                 width: 20px;
                 vertical-align: sub;
